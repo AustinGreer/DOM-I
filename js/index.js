@@ -126,3 +126,21 @@ helpLink.textContent = "Help"
 helpLink.style.color = "green"
 
 nav.prepend(helpLink)
+
+
+//STRETCH
+// 1. Update styles
+document.querySelector("body").style.backgroundColor = "lightBlue"
+
+textContentHeading.forEach(heading => {
+  heading.style.color = "navy"
+})
+
+textContentParagraph.forEach(paragraph => {
+  paragraph.style.color = "white"
+  paragraph.style.backgroundColor = "black"
+})
+
+
+// 2. Update Button
+
