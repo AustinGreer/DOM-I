@@ -105,3 +105,24 @@ const footerParagraph = document.querySelector("footer p")
 
 // 2. Content
 footerParagraph.textContent = siteContent.footer.copyright
+
+// ADDING NEW CONTENT
+// 1. Change color of nav text to green
+navLinks.forEach(link => {
+  link.style.color = "green"
+})
+
+// 2. Utilize both appendChild and prepend to add two new items to nav
+const blogLink = document.createElement("a")
+blogLink.setAttribute("href", "#")
+blogLink.textContent = "Blog"
+blogLink.style.color = "green"
+
+nav.appendChild(blogLink)
+
+const helpLink = document.createElement("a")
+helpLink.setAttribute("href", "#")
+helpLink.textContent = "Help"
+helpLink.style.color = "green"
+
+nav.prepend(helpLink)
