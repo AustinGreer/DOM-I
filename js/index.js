@@ -63,3 +63,29 @@ const ctaImg = document.querySelector("#cta-img")
 ctaHeading.innerHTML = "Dom <br> Is <br> Awesome"
 ctaButton.textContent = siteContent.cta.button
 ctaImg.src = siteContent.cta["img-src"]
+
+//UPDATE MAIN CONTENT SECTION
+// 1. Selecors
+const textContentHeading = document.querySelectorAll(".text-content h4")
+const textContentParagraph = document.querySelectorAll(".text-content p")
+const middleImg = document.querySelector("#middle-img")
+
+// 2. Add content - 
+// a. headings
+textContentHeading[0].textContent = siteContent["main-content"]["features-h4"]
+textContentHeading[1].textContent = siteContent["main-content"]["about-h4"]
+textContentHeading[2].textContent = siteContent["main-content"]["services-h4"]
+textContentHeading[3].textContent = siteContent["main-content"]["product-h4"]
+textContentHeading[4].textContent = siteContent["main-content"]["vision-h4"]
+
+// b. paragraphs
+textContentParagraph[0].textContent = siteContent["main-content"]["features-content"]
+textContentParagraph[1].textContent = siteContent["main-content"]["about-content"]
+textContentParagraph[2].textContent = siteContent["main-content"]["services-content"]
+textContentParagraph[3].textContent = siteContent["main-content"]["product-content"]
+textContentParagraph[4].textContent = siteContent["main-content"]["vision-content"]
+
+// c. middle img
+middleImg.src = siteContent["main-content"]["middle-img-src"]
+
+
