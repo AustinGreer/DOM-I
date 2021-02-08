@@ -40,3 +40,26 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//UPDATE HEADER
+// 1. Selectors
+const nav = document.querySelector("nav")
+const navLinks = document.querySelectorAll("nav a")
+
+// 2. Add text content
+navLinks.forEach((link, index) => {
+  link.textContent = siteContent.nav[`nav-item-${index + 1}`]
+})
+
+
+//UPDATE CTA SECTION
+// 1. Selectors
+const ctaHeading = document.querySelector("h1")
+const ctaButton = document.querySelector("button")
+const ctaImg = document.querySelector("#cta-img")
+
+// 2. Add Content
+ctaHeading.innerHTML = "Dom <br> Is <br> Awesome"
+ctaButton.textContent = siteContent.cta.button
+ctaImg.src = siteContent.cta["img-src"]
