@@ -88,4 +88,20 @@ textContentParagraph[4].textContent = siteContent["main-content"]["vision-conten
 // c. middle img
 middleImg.src = siteContent["main-content"]["middle-img-src"]
 
+//UPDATE CONTACT
+// 1. Selectors
+const contactHeading = document.querySelector(".contact h4")
+const contactParagraphs = document.querySelectorAll(".contact p")
 
+// 2. add content
+contactHeading.textContent = siteContent.contact["contact-h4"]
+contactParagraphs[0].innerHTML = "23 Way 456 Street, <br> Somewhere, USA"
+contactParagraphs[1].textContent = siteContent.contact.phone
+contactParagraphs[2].textContent = siteContent.contact.email
+
+//UPDATE FOOTER
+// 1. Selector
+const footerParagraph = document.querySelector("footer p")
+
+// 2. Content
+footerParagraph.textContent = siteContent.footer.copyright
